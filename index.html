@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <title>IMC Calculadora</title>
+
+</head>
+
+<body>
+
+    <div class="banner">
+
+        <img src="img/logo.png" alt="logotipo voce saudavel">
+
+    </div>
+
+    <div class="container">
+        <h1>Calcule seu IMC</h1>
+
+        <p>IMC é a sigla para Índice de Massa Corporal, parâmetro adotado pela Organização Mundial de Saúde para
+            calcular o peso ideal de cada pessoa.</p>
+        <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela.
+            Importante: siga os exemplos e use pontos como separadores.</p>
+
+        <div class="content">
+
+            <table>
+                <tr>
+                    <th>IMC</th>
+                    <th>Classificação</th>
+                </tr>
+                <tr>
+                    <td>Menor que 18.5</td>
+                    <td>Magreza</td>
+                </tr>
+                <tr>
+                    <td>Entre 18.5 e 25.9</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>Entre 25.0 e 29.9</td>
+                    <td>Sobrepeso</td>
+                </tr>
+                <tr>
+                    <td>Maior que 29.9</td>
+                    <td>Obesidade</td>
+                </tr>
+            </table>
+
+            <div class="form">
+                <form action="#">
+                     <div> <!--criando essas divs pra usar o display flex -->
+                        <label for="altura">Altura</label> <br>
+                        <input type="text" id="altura" placeholder="Ex: 1.70">
+                    </div>
+                    
+                    <div>
+                        <label for="peso">Peso</label> <br>
+                        <input type="text" id="peso" placeholder="Ex: 66.5">
+                    </div>
+
+                    <button>Calcular</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
