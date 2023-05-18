@@ -23,6 +23,10 @@ h1{
 }
 .content{
     display: flex; /*pra deixar a form lado a lado dps*/
+    column-gap: 50px;/*criando uma margem entre os filhos*/
+}
+#area-calc{
+    width: 50%;
 }
 table{
     width: 50%;
@@ -46,4 +50,31 @@ td{
 }
 form{
     display: flex;
+    flex-wrap: wrap;/*permite multiplas linhas*/
+    column-gap: 15px;
+}
+input{
+    width: 240px;
+    height: 30px;
+    border:solid 1px #CCCCCC;
+    padding-left: 5px;
+}
+button{
+    background-color: #0A5FAE;
+    color: white;
+    border: solid 1px #CCCCCC;
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#result{
+    background-color: #005F09;
+    text-align: center;
+    padding: 10px 0;
+}
+#result h3{  /*ta mexendo so no h3 (o texto)*/
+    color: white;
+    font-size: 24px;
+    margin: 0;
 }
