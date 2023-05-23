@@ -1,3 +1,3 @@
-Veja como fica no seu google:
+Veja como fica em seu navegador:
 
 https://jgois1.github.io/Projeto2_IMC/
