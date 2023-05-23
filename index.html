@@ -30,7 +30,8 @@
 
         <p>IMC é a sigla para Índice de Massa Corporal, parâmetro adotado pela Organização Mundial de Saúde para
             calcular o peso ideal de cada pessoa.</p>
-        <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela.
+        <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compa
+            re com os índices da tabela.
             Importante: siga os exemplos e use pontos como separadores.</p>
 
         <div class="content">
@@ -71,24 +72,25 @@
                         <input type="text" id="peso" placeholder="Ex: 66.5">
                     </div>
 
-                    <button>Calcular</button>
+                    <!--precisa botar isso pra vincular a função do click entre o java script e o botão no html-->
+                    <button type="button" onclick="calcularImc()">Calcular</button>
                 </form>
 
                 <div id="result">
                     <h3>Seu IMC: 23.01</h3>
                 </div>
 
-
             </div>
 
         </div>
-   
-        <footer>
-            <p>Projeto desenvolvido pela <a target="_blank" href="https://www.cotiinformatica.com.br">Coti Informática</a></p>
-        </footer>
-
     </div>
-    
+
+    <div id="footer">
+        Projeto desenvolvido pela <a target="_blank" href="https://www.cotiinformatica.com.br/"> Coti Informática</a>
+    </div>
+
+    <!-- ligacao javascript e HTML -->
+    <script src="js/script.js"></script>
 
 </body>
 
