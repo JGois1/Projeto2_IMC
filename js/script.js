@@ -8,7 +8,7 @@ function calcularImc(){
     console.log(peso);
     //var = variavel
     //no JS eu não preciso declarar os tipos (ex: float, int, string) ele se detecta sozinho.
-    //console.log('Variavel');  essa função faz aparecer uma mensagenzinha no console no inspecionar do navegador
+    //console.log('Variavel');  essa função faz aparecer uma mensagenzinha no console no inspecionar do navegador.
 
     if(altura != '' && peso !=''){
         //console.log('ok'); realizando testes...
