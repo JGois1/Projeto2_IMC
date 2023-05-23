@@ -78,3 +78,17 @@ button{
     font-size: 24px;
     margin: 0;
 }
+footer{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #D2E9FF;
+    color: #0A5FAE;
+    text-align: center;
+    height: 55px;
+}
+a{
+    color: #00014b;
+    text-decoration:none
+}
