@@ -18,8 +18,12 @@ h1{
     align-items: center; /*alinhando no eixo Y*/
 }
 .container{
-    width: 1100px;
-    margin: 40px auto; /* mesma coisa que magin-left:auto; margin-right auto; margin-top:40px; margin-bottom:40px; (economizou 4 linhas) */
+    width: 95%;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-bottom: 70px; /* mesma coisa que magin-left:auto; margin-right auto; margin-top:40px; margin-bottom:40px; (economizou 4 linhas) */
 }
 .content{
     display: flex; /*pra deixar a form lado a lado dps*/
@@ -72,23 +76,61 @@ button{
     background-color: #005F09;
     text-align: center;
     padding: 10px 0;
+    visibility: hidden; /*inicia escondida*/
 }
-#result h3{  /*ta mexendo so no h3 (o texto)*/
+#result h3{  
     color: white;
     font-size: 24px;
     margin: 0;
 }
-footer{
-    position:fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+#footer{
+    text-align: center;
     background-color: #D2E9FF;
     color: #0A5FAE;
-    text-align: center;
-    height: 55px;
+    padding-top: 17px ;
+    padding-bottom: 17px;
 }
 a{
-    color: #00014b;
-    text-decoration:none
+    text-decoration: none;
+    color: #0A5FAE;
+}
+
+@media (max-width: 1150px){
+   
+    .content{
+        flex-direction: column-reverse;/*comando proncipal pra ficar um embaixo do outro, faz toda a diferenca*/
+    }
+    table{
+        margin-top: 20px;
+        width: 100%;
+    }
+    #area-calc{
+        width: 100%;
+    }
+    form{
+        justify-content: center;
+    }
+    #result{
+        margin-top: 9px;
+    }
+    .banner img{
+        width: 300px;
+    }
+}
+
+@media (max-width: 767px){
+    form{
+        width: 100%;
+        flex-direction: column;
+    }
+    form div{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+    input{
+        box-sizing: border-box; /* criar bordinha no final do input */ /* poderia tambem botar width 97% */
+        width: 100%; 
+    }
 }
