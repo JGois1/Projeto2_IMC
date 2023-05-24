@@ -134,9 +134,9 @@ a{
         width: 100%; 
     }
 }
-@media (min-width: 1360px){
+@media (min-width: 1370px){
     #footer{
-        position: fixed;
+        position: absolute;
         bottom: 0;
         width:100%;
     }
