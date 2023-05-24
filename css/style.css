@@ -89,6 +89,7 @@ button{
     color: #0A5FAE;
     padding-top: 17px ;
     padding-bottom: 17px;
+    margin-top: 60px;
 }
 a{
     text-decoration: none;
@@ -139,8 +140,5 @@ a{
         position: absolute;
         bottom: 0;
         width:100%;
-    }
-    .container{
-        margin-top:100px;
     }
 }
