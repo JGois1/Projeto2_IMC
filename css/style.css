@@ -134,3 +134,13 @@ a{
         width: 100%; 
     }
 }
+@media (min-width: 1360px){
+    #footer{
+        position: fixed;
+        bottom: 0;
+        width:100%;
+    }
+    .container{
+        margin-top:100px;
+    }
+}
