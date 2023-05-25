@@ -1,69 +1,96 @@
-body{
-    margin: 0; /* tirar a margenzinha que fica nos cantinhos da div */
+body {
+    margin: 0;
+    /* tirar a margenzinha que fica nos cantinhos da div */
     font-family: 'Inter', sans-serif;
 }
-h1{
+
+h1 {
     color: #333333;
 }
-.banner{
+
+.banner {
     height: 260px;
     width: 100%;
-    background-image: url(../img/background.jpg); /* precisa ter esse ../ por conta das pastas diferentes */
-    background-size: cover;    /* evitar que a imagem se repita em monitores maiores que 1360 */
-    background-position: center; /* centralizar a imagem quando a janela do google for menor, ou for em um celular (responsivo) etc */
+    background-image: url(../img/background.jpg);
+    /* precisa ter esse ../ por conta das pastas diferentes */
+    background-size: cover;
+    /* evitar que a imagem se repita em monitores maiores que 1360 */
+    background-position: center;
+    /* centralizar a imagem quando a janela do google for menor, ou for em um celular (responsivo) etc */
     /* background-position: top center */
 
-    display: flex; /*o display flex desbloqueia as opções abaixo, sem ele não funcionaria.*/
-    justify-content: center; /*alinhando no eixo X */
-    align-items: center; /*alinhando no eixo Y*/
+    display: flex;
+    /*o display flex desbloqueia as opções abaixo, sem ele não funcionaria.*/
+    justify-content: center;
+    /*alinhando no eixo X */
+    align-items: center;
+    /*alinhando no eixo Y*/
 }
-.container{
+
+.container {
     width: 95%;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 40px;
-    margin-bottom: 70px; /* mesma coisa que magin-left:auto; margin-right auto; margin-top:40px; margin-bottom:40px; (economizou 4 linhas) */
+    margin-bottom: 70px;
+    /* mesma coisa que magin-left:auto; margin-right auto; margin-top:40px; margin-bottom:40px; (economizou 4 linhas) */
 }
-.content{
-    display: flex; /*pra deixar a form lado a lado dps*/
-    column-gap: 50px;/*criando uma margem entre os filhos*/
+#info{
+    color: rgb(66, 66, 66);
 }
-#area-calc{
+.content {
+    display: flex;
+    /*pra deixar a form lado a lado dps*/
+    column-gap: 50px;
+    /*criando uma margem entre os filhos*/
+}
+
+#area-calc {
     width: 50%;
 }
-table{
+
+table {
     width: 50%;
     text-align: center;
     font-size: 14px;
 }
-tr{
+
+tr {
     background-color: #dddddd;
     height: 30px;
     width: 275px;
 }
-th{
+
+th {
     background-color: #0A5FAE;
     color: white;
 }
-tr:hover{
+
+tr:hover {
     background-color: #DFF5FF;
 }
-td{
-    width: 50%; /* poderia botar 275px tbm (como mostra o figma) porém trabalhar com % é melhor para a mudança de telas, etc.*/
+
+td {
+    width: 50%;
+    /* poderia botar 275px tbm (como mostra o figma) porém trabalhar com % é melhor para a mudança de telas, etc.*/
 }
-form{
+
+form {
     display: flex;
-    flex-wrap: wrap;/*permite multiplas linhas*/
+    flex-wrap: wrap;
+    /*permite multiplas linhas*/
     column-gap: 15px;
 }
-input{
+
+input {
     width: 240px;
     height: 30px;
-    border:solid 1px #CCCCCC;
+    border: solid 1px #CCCCCC;
     padding-left: 5px;
 }
-button{
+
+button {
     background-color: #0A5FAE;
     color: white;
     border: solid 1px #CCCCCC;
@@ -72,73 +99,95 @@ button{
     margin-top: 10px;
     margin-bottom: 15px;
 }
-#result{
+
+#result {
     background-color: #005F09;
     text-align: center;
     padding: 10px 0;
-    visibility: hidden; /*inicia escondida*/
+    visibility: hidden;
+    /*inicia escondida*/
 }
-#result h3{  
+
+#result h3 {
     color: white;
     font-size: 24px;
     margin: 0;
 }
-#footer{
+
+#footer {
     text-align: center;
     background-color: #D2E9FF;
     color: #0A5FAE;
-    padding-top: 17px ;
+    padding-top: 17px;
     padding-bottom: 17px;
-    margin-top: 60px;
 }
-a{
+
+a {
     text-decoration: none;
     color: #0A5FAE;
 }
 
-@media (max-width: 1150px){
-   
-    .content{
-        flex-direction: column-reverse;/*comando proncipal pra ficar um embaixo do outro, faz toda a diferenca*/
+
+
+@media (max-width: 1150px) {
+
+    .content {
+        flex-direction: column-reverse;
+        /*comando proncipal pra ficar um embaixo do outro, faz toda a diferenca*/
     }
-    table{
+
+    table {
         margin-top: 20px;
         width: 100%;
     }
-    #area-calc{
+
+    #area-calc {
         width: 100%;
     }
-    form{
+
+    form {
         justify-content: center;
     }
-    #result{
+
+    #result {
         margin-top: 9px;
     }
-    .banner img{
+
+    .banner img {
         width: 300px;
     }
 }
 
-@media (max-width: 767px){
-    form{
+@media (max-width: 767px) {
+    form {
         width: 100%;
         flex-direction: column;
     }
-    form div{
+
+    form div {
         width: 100%;
     }
-    button{
+
+    button {
         width: 100%;
     }
-    input{
-        box-sizing: border-box; /* criar bordinha no final do input */ /* poderia tambem botar width 97% */
-        width: 100%; 
+
+    input {
+        box-sizing: border-box;
+        /* criar bordinha no final do input */
+        /* poderia tambem botar width 97% */
+        width: 100%;
     }
 }
-@media (min-width: 1370px){
-    #footer{
-        position: absolute;
+
+@media(min-width: 1370px) {
+    #footer {
         bottom: 0;
-        width:100%;
+        position: fixed;
+        width: 100%;
+    }
+
+    .banner {
+        margin-bottom: 3%;
     }
 }
