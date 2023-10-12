@@ -16,7 +16,7 @@ function calcularImc() {
 
         var imc = peso / (altura * altura);
         // console.log(imc);
-        result.innerHTML = '<h1>Seu IMC é : ' + imc.toFixed(2) + '</h1>';
+        result.innerHTML = '<h3>Seu IMC é: ' + imc.toFixed(2) + '</h3>';
         //innerHTMl é uma propriedade
         //toFixed é pra delimitar as casas decimais do numero
 
